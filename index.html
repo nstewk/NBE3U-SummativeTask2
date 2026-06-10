@@ -1,158 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">Projects</div>
-            <ul class="nav-links">
-                <li><a href="#featured">Featured</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-        </div>
-    </nav>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Hero Section -->
-    <section class="hero" id="featured">
-        <div class="hero-content">
-            <h1 class="hero-title">Building Tomorrow</h1>
-            <p class="hero-subtitle">A collection of projects exploring design, code, and creativity</p>
-            <a href="#projects" class="cta-button">Explore Projects</a>
-        </div>
-        <div class="hero-background"></div>
-    </section>
+        <title>The Sixties Scoop | A Stolen Generation</title>
 
-    <!-- Featured Project -->
-    <section class="featured-project">
-        <div class="featured-container">
-            <div class="featured-text">
-                <h2>Featured Project</h2>
-                <h3>AI Study Assistant</h3>
-                <p>An intelligent learning tool that uses machine learning to personalize study sessions. Analyzes patterns in student performance and generates customized practice problems.</p>
-                <div class="featured-tags">
-                    <span class="tag">Python</span>
-                    <span class="tag">Machine Learning</span>
-                    <span class="tag">Web App</span>
+        <link rel="stylesheet" href="./styles.css">
+        <script src="./script.js" defer></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="./tailwind.config.js"></script>
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+
+    </head>
+    <body class="font-sans text-brand-light antialiased selection:bg-brand-accent selection:text-white">
+
+        <header id="navbar" class="fixed w-full top-0 z-50 transition-all duration-500 bg-transparent py-6 px-6 md:px-12">
+            <div class="max-w-7xl mx-auto flex justify-between items-center">
+                <div class="text-sm tracking-[0.2em] uppercase font-semibold text-brand-gray">
+                    A Historical Report
+                </div>
+                <nav class="hidden md:flex gap-8 text-sm font-medium text-brand-gray tracking-wide">
+                    <a href="#introduction" class="hover:text-white transition-colors">Introduction</a>
+                    <a href="#the-machinery" class="hover:text-white transition-colors">The Policy</a>
+                    <a href="#impact" class="hover:text-white transition-colors">The Impact</a>
+                    <a href="#legacy" class="hover:text-white transition-colors">Legacy</a>
+                </nav>
+            </div>
+        </header>
+
+        <section class="relative min-h-screen flex items-center justify-center ambient-bg px-6 overflow-hidden">
+            <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiPgo8cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBmaWxsPSIjMGEwYTBhIj48L3JlY3Q+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InJnYmEoMjU1LDwyNTUsMjU1LDAuMDUpIj48L3JlY3Q+Cjwvc3ZnPg==')] opacity-30"></div>
+            
+            <div class="relative z-10 max-w-4xl mx-auto text-center mt-20">
+                <p class="text-brand-accent font-serif italic text-xl md:text-2xl mb-6 reveal">A systemic erasure.</p>
+                <h1 class="text-6xl md:text-8xl lg:text-9xl font-serif font-medium tracking-tight mb-8 reveal delay-100">
+                    The Sixties<br>Scoop.
+                </h1>
+                <p class="max-w-2xl mx-auto text-lg md:text-xl text-brand-gray font-light leading-relaxed reveal delay-200">
+                    Between the 1950s and the 1980s, an estimated 20,000 Indigenous children were taken from their families and placed in non-Indigenous homes.
+                </p>
+                
+                <div class="mt-24 reveal delay-300">
+                    <p class="text-xs tracking-[0.3em] uppercase text-brand-gray mb-4">Scroll to read</p>
+                    <div class="w-[1px] h-16 bg-brand-gray mx-auto opacity-50"></div>
                 </div>
             </div>
-            <div class="featured-image"></div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects Grid -->
-    <section class="projects" id="projects">
-        <div class="projects-container">
-            <h2 class="section-title">All Projects</h2>
-            <div class="projects-grid">
-                <!-- Project Card 1 -->
-                <div class="project-card">
-                    <div class="project-image project-1"></div>
-                    <div class="project-info">
-                        <h3>Social Media Dashboard</h3>
-                        <p>Real-time analytics dashboard for tracking social media metrics across platforms</p>
-                        <div class="project-tags">
-                            <span class="tag small">React</span>
-                            <span class="tag small">API</span>
-                        </div>
+        <section id="introduction" class="py-32 md:py-48 px-6 bg-brand-black relative">
+            <div class="max-w-3xl mx-auto reveal">
+                <h2 class="text-3xl md:text-5xl font-serif mb-12 text-center text-white leading-tight">
+                    "It was a deliberate act of assimilation."
+                </h2>
+                <div class="space-y-8 text-lg md:text-xl font-light text-zinc-300 leading-relaxed drop-cap">
+                    <p>
+                        The "Sixties Scoop" refers to a series of policies enacted by provincial child welfare authorities across Canada starting in the mid-1950s. The term, coined by researcher Patrick Johnston in his 1983 report <em>Native Children and the Child Welfare System</em>, captures the large scale apprehension of Indigenous children from their homes, families, and communities.
+                    </p>
+                    <p>
+                        Without the consent of their parents' or bands', these children were placed in the child welfare system and primarily adopted out to non-Indigenous, middle-class families. Placements were not limited to Canada, many children were sent to the United States, the United Kingdom, Germany, India, the Netherlands, Botwasana, and several other countries.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-brand-dark border-y border-zinc-800">
+            <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12 text-center reveal">
+                <div>
+                    <div class="text-5xl md:text-7xl font-serif text-white mb-4">20,000+</div>
+                    <div class="text-sm tracking-widest uppercase text-brand-gray font-medium">Estimated children removed</div>
+                </div>
+                <div>
+                    <div class="text-5xl md:text-7xl font-serif text-white mb-4">1950s</div>
+                    <div class="text-sm tracking-widest uppercase text-brand-gray font-medium">To the late 1980s</div>
+                </div>
+                <div>
+                    <div class="text-5xl md:text-7xl font-serif text-white mb-4">70%</div>
+                    <div class="text-sm tracking-widest uppercase text-brand-gray font-medium">Adopted into non-Indigenous homes</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="the-machinery" class="py-32 md:py-48 px-6 bg-brand-black ambient-bg-2">
+            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 lg:gap-32 items-center">
+                <div class="reveal">
+                    <h3 class="text-brand-accent text-sm tracking-[0.2em] uppercase font-bold mb-4">The Policy</h3>
+                    <h2 class="text-4xl md:text-6xl font-serif mb-8 leading-tight">The Ignorant Removal</h2>
+                    <div class="space-y-6 text-lg font-light text-zinc-400 leading-relaxed">
+                        <p>
+                            Following changes to the Indian Act in 1951, provincial governments were given jurisdiction over Indigenous child welfare. Without any additional funding, the provinces had to rely on social workers that had no understanding of Indigenous culture, poverty, or community child-rearing practices.
+                        </p>
+                        <p>
+                            What they interpreted as "neglect" was often the direct result of systemic poverty imposed by the government, or communal parenting structures that differed from Euro-Canadian nuclear family models. Children were seized without warning, often directly from hospitals or schools.
+                        </p>
                     </div>
                 </div>
-
-                <!-- Project Card 2 -->
-                <div class="project-card">
-                    <div class="project-image project-2"></div>
-                    <div class="project-info">
-                        <h3>Weather Forecast App</h3>
-                        <p>Beautiful weather application with real-time data and multi-day forecasting</p>
-                        <div class="project-tags">
-                            <span class="tag small">JavaScript</span>
-                            <span class="tag small">API</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project Card 3 -->
-                <div class="project-card">
-                    <div class="project-image project-3"></div>
-                    <div class="project-info">
-                        <h3>Music Streaming Platform</h3>
-                        <p>Full-stack music streaming service with playlists, recommendations, and playback controls</p>
-                        <div class="project-tags">
-                            <span class="tag small">Node.js</span>
-                            <span class="tag small">Database</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project Card 4 -->
-                <div class="project-card">
-                    <div class="project-image project-4"></div>
-                    <div class="project-info">
-                        <h3>Task Management System</h3>
-                        <p>Collaborative task manager with real-time updates and team collaboration features</p>
-                        <div class="project-tags">
-                            <span class="tag small">Vue.js</span>
-                            <span class="tag small">WebSocket</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project Card 5 -->
-                <div class="project-card">
-                    <div class="project-image project-5"></div>
-                    <div class="project-info">
-                        <h3>E-commerce Platform</h3>
-                        <p>Complete online store with product catalog, shopping cart, and payment processing</p>
-                        <div class="project-tags">
-                            <span class="tag small">Full-stack</span>
-                            <span class="tag small">Commerce</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project Card 6 -->
-                <div class="project-card">
-                    <div class="project-image project-6"></div>
-                    <div class="project-info">
-                        <h3>Fitness Tracking App</h3>
-                        <p>Mobile app for tracking workouts, calories, and personal fitness goals with visualizations</p>
-                        <div class="project-tags">
-                            <span class="tag small">Mobile</span>
-                            <span class="tag small">Health</span>
+                <div class="relative reveal delay-200">
+                    <div class="aspect-[3/4] bg-zinc-900 border border-zinc-800 p-8 flex flex-col justify-between">
+                        <div class="w-12 h-[1px] bg-brand-accent"></div>
+                        <div>
+                            <p class="font-serif italic text-2xl text-zinc-500 mb-6 leading-relaxed">
+                                "And what she tells me is that it was a very confusing day because she was told by Alberta Social Services workers to get “All your little brothers and sisters and get them rounded up, and we’re going to go for drive.”"
+                            </p>
+                            <p class="text-sm tracking-widest uppercase text-zinc-600">— Adam North Peigan</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="about-container">
-            <h2 class="section-title">About These Projects</h2>
-            <div class="about-content">
-                <p>These projects showcase a diverse range of skills in web development, design, and problem-solving. Each project represents hours of learning, experimentation, and iteration.</p>
-                <p>From full-stack applications to machine learning experiments, this portfolio demonstrates the ability to take ideas from concept to completion across multiple technologies and platforms.</p>
+        <section id="impact" class="py-32 md:py-48 px-6 bg-brand-dark">
+            <div class="max-w-4xl mx-auto text-center reveal">
+                <div class="separator mb-16"></div>
+                <h2 class="text-4xl md:text-5xl font-serif mb-12 text-white">Severing the Roots</h2>
+                <div class="space-y-8 text-xl font-light text-zinc-300 leading-relaxed text-left md:text-center">
+                    <p>
+                        The impact of the Sixties Scoop on Indigenous children and communities was devastating and long-lasting. By removing children from their cultural environment, the state effectively severed their connection to their heritage, language, and extended families.
+                    </p>
+                    <p>
+                        Survivors face long-term impacts from loss of culture and hertiage to increased rates of mental health issues like anxiety and PTSD. Many survivors also report suffering sexual, physical, and emotional abuse in their adoptive homes and later in life struggled with addiction and homelessness. The trauma is intergenerational, with many survivors struggling to reconnect with their birth families and communities later in life.
+                    </p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; 2024 Projects. All work showcases learning and creativity.</p>
-            <div class="footer-links">
-                <a href="#featured">Back to Top</a>
+        <section id="legacy" class="py-32 md:py-48 px-6 bg-brand-black">
+            <div class="max-w-7xl mx-auto grid md:grid-cols-12 gap-12 items-start">
+                <div class="md:col-span-4 md:sticky md:top-32 reveal">
+                    <h2 class="text-3xl md:text-4xl font-serif mb-6">Reclaiming Identity</h2>
+                    <p class="text-brand-gray font-light leading-relaxed">
+                        The struggle for recognition, apology, and compensation has been led by the survivors themselves.
+                    </p>
+                </div>
+                <div class="md:col-span-7 md:col-start-6 space-y-16 reveal delay-200">
+                    <article class="border-l border-zinc-800 pl-8 pb-8">
+                        <h4 class="text-xl font-serif text-white mb-4">Class Action Lawsuits</h4>
+                        <p class="text-zinc-400 font-light leading-relaxed mb-4">
+                            In the 2000s, survivors began filing class-action lawsuits against provincial and federal governments. In 2017, the Canadian government announced an $800 million settlement for Sixties Scoop survivors, recognizing the harm caused by the loss of cultural identity.
+                        </p>
+                    </article>
+                    <article class="border-l border-brand-accent pl-8 pb-8">
+                        <h4 class="text-xl font-serif text-white mb-4">Official Apologies</h4>
+                        <p class="text-zinc-400 font-light leading-relaxed mb-4">
+                            Several provincial governments have issued formal apologies. In 2015, Manitoba became the first province to apologize, acknowledging that the practice "robbed children of their culture." However, advocates emphasize that apologies must be paired with fundamental changes to the current child welfare system.
+                        </p>
+                    </article>
+                    <article class="border-l border-zinc-800 pl-8">
+                        <h4 class="text-xl font-serif text-white mb-4">The Millennium Scoop</h4>
+                        <p class="text-zinc-400 font-light leading-relaxed mb-4">
+                            The tragedy is not entirely in the past. Today, Indigenous children remain vastly overrepresented in the child welfare system, a phenomenon often referred to as the "Millennium Scoop." Indigenous communities continue to fight for jurisdiction over their own child and family services.
+                        </p>
+                    </article>
+                </div>
             </div>
-        </div>
-    </footer>
+        </section>
 
-    <script src="script.js"></script>
-</body>
+        <footer class="bg-zinc-900 border-t border-zinc-800 pt-24 pb-12 px-6">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12 mb-16">
+                <div class="max-w-sm reveal">
+                    <h2 class="text-2xl font-serif mb-4 text-white">Support Resources</h2>
+                    <p class="text-sm text-zinc-400 leading-relaxed mb-6">
+                        This subject matter is deeply sensitive and can be triggering. If you or someone you know requires support, immediate help is available.
+                    </p>
+                    <div class="bg-black border border-zinc-800 p-6 rounded-sm">
+                        <h5 class="text-brand-accent font-bold uppercase tracking-wider text-xs mb-2">Hope for Wellness Help Line</h5>
+                        <p class="text-white text-lg mb-1">1-855-242-3310</p>
+                        <p class="text-zinc-500 text-sm">Available 24/7 to all Indigenous people across Canada.</p>
+                        <p class="text-zinc-500 text-sm">For more information, visit <a href="https://www.sac-isc.gc.ca/eng/1576089519527/1576089566478" target="_blank" class="text-brand-accent hover:underline">Government of Canada's website on Indigenous Mental Health</a></p>
+                    </div>
+                </div>
+                
+                <div class="flex gap-16 reveal delay-100">
+                    <div>
+                        <h5 class="text-white font-medium mb-4">Learn More</h5>
+                        <ul class="space-y-3 text-sm text-zinc-500">
+                            <li><a href="https://thecanadianencyclopedia.ca/en/article/sixties-scoop" target="_blank" class="hover:text-white transition-colors">The Canadian Encyclopedia - Sixties Scoop</a></li>
+                            <li><a href="https://thecanadianencyclopedia.ca/en/article/voices-from-here-adam-north-peigan" target="_blank" class="hover:text-white transition-colors">The Canadian Encyclopedia - Voices From Here: Adam North Peigan</a></li>
+                            <li><a href="https://www.sixtiesscoopnetwork.org/" target="_blank" class="hover:text-white transition-colors">Sixties Scoop Network</a></li>
+                            <li><a href="https://www.cbc.ca/news/canada/manitoba/manitoba-premier-greg-selinger-apologizes-for-sixties-scoop-1.3118049" target="_blank" class="hover:text-white transition-colors">CBC News - Manitoba Premier Greg Selinger apologizes for Sixties Scoop</a></li>
+                            <li><a href="https://downiewenjack.ca/indigenous-child-removals-the-sixties-scoop/" target="_blank" class="hover:text-white transition-colors">Dr. Donna Downie-Wenjack - Indigenous Child Removals: The Sixties Scoop</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="max-w-7xl mx-auto pt-8 border-t border-zinc-800 flex flex-col md:flex-row justify-between items-center text-xs text-zinc-600">
+                <p>Designed as an educational resource.</p>
+                <p class="mt-4 md:mt-0">Historical facts drawn from public archives and survivor testimonies.</p>
+            </div>
+        </footer>
+    </body>
 </html>

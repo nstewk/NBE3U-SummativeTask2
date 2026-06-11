@@ -12,7 +12,7 @@ tailwind.config = {
                     charcoal: '#1e1e1e',
                     gray: '#a1a1aa',
                     light: '#f4f4f5',
-                    accent: '#8b2e2e', // Muted, solemn red
+                    accent: '#8b2e2e',
                 }
             },
             spacing: {
